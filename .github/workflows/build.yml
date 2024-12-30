@@ -12,11 +12,9 @@ jobs:
     strategy:
       matrix:
         url:
-          - "https://apps.apple.com/us/app/reddit/id1064216828"
-          - "https://apps.apple.com/us/app/twitch-live-streaming/id460177396"
+          - "https://apps.apple.com/fr/app/youtube/id544007664"
         path:
-          - App.ipa
-          - ''
+          - YouTube.ipa
     runs-on: ubuntu-latest
     steps:
       - name: Download IPA
