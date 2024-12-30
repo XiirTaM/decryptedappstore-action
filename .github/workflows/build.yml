@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download IPA
-        uses: level3tjg/decryptedappstore-action@main
+        uses: XiirTaM/decryptedappstore-action@main
         with:
           appstore_url: "${{ matrix.url }}"
           cache: false
