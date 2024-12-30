@@ -26,5 +26,5 @@ jobs:
           token: "${{ secrets.SESSION_TOKEN }}"
 
       - name: Check IPA was downloaded
-        if: matrix.path != '' && hashFiles('App.ipa') == ''
+        if: matrix.path != '' && hashFiles('YouTube.ipa') == ''
         run: exit 1
