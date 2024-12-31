@@ -144,8 +144,8 @@ runs:
         fi
 
     - name: Upload Artifact
-      - run: mkdir -p IPA
-      - uses: actions/upload-artifact@v4
+      run: mkdir -p IPA
+      uses: actions/upload-artifact@v4
         with:
           name: YouTube.ipa
           path: "${{ inputs.path }}"
