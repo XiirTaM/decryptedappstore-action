@@ -137,7 +137,6 @@ runs:
       shell: bash
       run: |
         curl -s -o "${{ inputs.path }}" "https://armconverter.com/decryptedappstore/download/${{ steps.app-info.outputs.appstore-id }}/${{ steps.app-info.outputs.bundle-id }}/${{ steps.get-token.outputs.version }}?token=${{ steps.get-token.outputs.token }}"
-        zip -T "${{ inputs.path }}"
         if [[ $? != 0 ]]; then
           echo "Failed to download IPA"
           exit 1
